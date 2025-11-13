@@ -1,0 +1,29 @@
+.event-form-sidebar {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  position: sticky;
+  top: 1rem;
+}
+
+.event-list {
+  min-height: 400px;
+}
+
+.event-image {
+  flex-shrink: 0;
+}
+
+/* Form Scroll Area */
+.form-scroll-area {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .event-form-sidebar {
+    height: auto;
+    position: static;
+  }
+}

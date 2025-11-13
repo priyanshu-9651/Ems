@@ -1,0 +1,47 @@
+.filter-bar {
+  background-color: #68a8e7; /* A light gray background */
+  border: 1px solid #6b99d4; /* A subtle border */
+  gap: 1rem; /* Spacing between elements */
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow groups to grow */
+}
+
+.filter-input,
+.filter-select {
+  border-radius: 0.5rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+.filter-input:focus,
+.filter-select:focus {
+  border-color: #667eea; /* A nice purple-ish color on focus */
+  box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+  outline: none;
+}
+
+.clear-button {
+  border-radius: 0.5rem;
+  min-width: 150px; /* Give the button a fixed width for consistency */
+}
+
+.clear-button:hover {
+  background-color: #384e75;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .filter-bar {
+    flex-direction: column; /* Stack filters vertically on mobile */
+    align-items: stretch;
+  }
+
+  .filter-group {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
